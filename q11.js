@@ -18,7 +18,7 @@ db.employees.aggregate([
         email:1,
         location:1,
         salary:1,
-        grade:{$cond:[{$gt:["$age",40]},"Grade A","Grade B"]}
+        grade:{$cond:[{$gt:["$age",40]},"Band A","Band B"]}
     }
 }
 ])
